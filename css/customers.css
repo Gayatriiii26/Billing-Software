@@ -1,0 +1,477 @@
+/* ==========================
+   Customers Page
+========================== */
+
+.main{
+    flex:1;
+    padding:35px;
+}
+
+/* Form Box */
+
+.form-box{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.form-box h2{
+    color:#1e3a8a;
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+/* Form */
+
+form{
+    width:100%;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    margin-top:18px;
+    font-weight:600;
+    color:#333;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:13px 15px;
+    border:1px solid #d6d9e0;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#29479d;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* Table Header */
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.table-header h2{
+    color:#1e3a8a;
+}
+
+.table-header input{
+    width:280px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+table th{
+    background:#29479d;
+    color:#fff;
+    padding:15px;
+    text-align:center;
+}
+
+table td{
+    padding:14px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f8fbff;
+}
+
+table tr:hover{
+    background:#eef5ff;
+}
+
+/* Buttons */
+
+.edit-btn,
+.delete-btn{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    margin:2px;
+}
+
+.edit-btn{
+    background:#2563eb;
+}
+
+.edit-btn:hover{
+    background:#1d4ed8;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .table-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .table-header input{
+        width:100%;
+    }
+
+}
+/* ==========================
+   Customer Form Grid
+========================== */
+
+.row{
+    display:flex;
+    gap:25px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.field{
+    flex:1;
+    min-width:280px;
+}
+
+.field textarea{
+    height:60px;
+}
+
+.save-btn{
+    height:48px;
+    border:none;
+    background:#29479d;
+    color:#fff;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#1d4ed8;
+}
+/* ==========================
+   Customer Layout
+========================== */
+
+.customer-wrapper{
+    display:flex;
+    gap:25px;
+    align-items:flex-start;
+}
+
+.customer-form-box{
+    width:32%;
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.customer-table-box{
+    width:68%;
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+@media(max-width:1000px){
+
+.customer-wrapper{
+    flex-direction:column;
+}
+
+.customer-form-box,
+.customer-table-box{
+    width:100%;
+}
+
+}
+
+.customer-layout{
+    display:grid;
+    grid-template-columns:340px 1fr;
+    gap:25px;
+    margin-top:25px;
+    align-items:start;
+}
+.customer-layout .form-box:first-child{
+    position:sticky;
+    top:20px;
+}
+
+/* ================= PRODUCT PAGE ================= */
+
+.customer-layout{
+
+display:grid;
+
+grid-template-columns:340px 1fr;
+
+gap:25px;
+
+align-items:start;
+
+margin-top:25px;
+
+}
+
+.customer-layout .form-box{
+
+margin:0;
+
+}
+
+.customer-layout .form-box:first-child{
+
+position:sticky;
+
+top:20px;
+
+}
+
+.table-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.table-header input{
+
+width:280px;
+
+padding:11px 15px;
+
+border:1px solid #d8dce7;
+
+border-radius:10px;
+
+font-size:15px;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+.table-header input:focus{
+
+border-color:#1e40af;
+
+box-shadow:0 0 0 3px rgba(30,64,175,.15);
+
+}
+
+/* ================= PRODUCT PAGE ================= */
+
+.customer-layout{
+    display:grid;
+    grid-template-columns:360px 1fr;
+    gap:25px;
+    align-items:start;
+    margin-top:25px;
+}
+
+.customer-layout .form-box{
+    margin:0;
+}
+
+.customer-layout .field{
+    margin-bottom:18px;
+}
+
+.customer-layout .field label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#374151;
+}
+
+.customer-layout input{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.customer-layout input:focus{
+    outline:none;
+    border-color:#21409A;
+    box-shadow:0 0 0 3px rgba(33,64,154,.15);
+}
+
+.customer-layout .save-btn{
+    width:100%;
+    margin-top:10px;
+}
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.table-header h2{
+    margin:0;
+    color:#21409A;
+}
+
+.table-header input{
+    width:260px;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+}
+
+/* PRODUCT TABLE */
+
+.customer-table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:12px;
+    background:#fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.customer-table th{
+    background:#21409A;
+    color:#fff;
+    padding:16px;
+    text-align:center;
+}
+
+.customer-table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.customer-table tr:nth-child(even){
+    background:#f8fbff;
+}
+
+.customer-table tr:hover{
+    background:#eef4ff;
+}
+
+/* BUTTONS */
+
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+}
+
+.edit-btn,
+.delete-btn{
+    padding:8px 14px;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.edit-btn{
+    background:#2563eb;
+}
+
+.edit-btn:hover{
+    background:#1d4ed8;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.customer-layout{
+    grid-template-columns:1fr;
+}
+
+.table-header{
+    flex-direction:column;
+    gap:15px;
+    align-items:flex-start;
+}
+
+.table-header input{
+    width:100%;
+}
+
+.action-buttons{
+    flex-direction:column;
+}
+}

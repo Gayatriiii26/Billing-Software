@@ -1,0 +1,11 @@
+# Database credentials
+php/db.php
+
+# Environment files
+.env
+
+# Temporary files
+*.log
+
+#IDE settings
+.vscode/

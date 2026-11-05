@@ -1,0 +1,173 @@
+body{
+    background:#f4f7fc;
+    font-family:'Poppins',sans-serif;
+}
+
+.profile-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.profile-top{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.profile-avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:55px;
+}
+
+.profile-info h2{
+    color:#1e3a8a;
+    margin-bottom:8px;
+}
+
+.profile-info p{
+    color:#666;
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.profile-box{
+    background:#f8fbff;
+    padding:30px;
+    border-radius:18px;
+    border:1px solid #e5e7eb;
+}
+
+.profile-box h3{
+    color:#1e3a8a;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+    color:#333;
+}
+
+.input-group input{
+    width:100%;
+    padding:13px 15px;
+    border:2px solid #dbe4f0;
+    border-radius:10px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.15);
+}
+
+.role-box{
+    padding:13px;
+    background:#eef4ff;
+    border-radius:10px;
+    color:#1e40af;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:18px;
+}
+
+.save-btn{
+    width:100%;
+    padding:14px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+.success-msg{
+
+    background:#dcfce7;
+    color:#166534;
+    padding:14px;
+    border-radius:10px;
+    margin-bottom:20px;
+    font-weight:600;
+
+}
+
+.error-msg{
+
+    background:#fee2e2;
+    color:#991b1b;
+    padding:14px;
+    border-radius:10px;
+    margin-bottom:20px;
+    font-weight:600;
+
+}
+.password-box{
+
+position:relative;
+
+}
+
+.password-box input{
+
+width:100%;
+padding:13px 45px 13px 15px;
+
+}
+
+.password-box i{
+
+position:absolute;
+right:15px;
+top:50%;
+transform:translateY(-50%);
+cursor:pointer;
+font-size:18px;
+color:#666;
+
+}
+
+.password-box i:hover{
+
+color:#2952cc;
+
+}
+/* Hide Microsoft Edge default password eye icon */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear{
+    display: none;
+}
+
+/* Hide Chromium password controls */
+input::-webkit-credentials-auto-fill-button{
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+}

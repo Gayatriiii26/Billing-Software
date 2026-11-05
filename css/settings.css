@@ -1,0 +1,114 @@
+/* ==========================
+   Settings Page
+========================== */
+
+.form-box{
+    background:#fff;
+    padding:30px;
+    margin-top:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.form-box h2{
+    color:#1e3a8a;
+    margin-bottom:25px;
+    font-size:24px;
+    border-left:5px solid #2563eb;
+    padding-left:12px;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.field{
+    flex:1;
+    min-width:280px;
+    display:flex;
+    flex-direction:column;
+}
+
+.field label{
+    font-size:15px;
+    font-weight:600;
+    color:#1e3a8a;
+    margin-bottom:8px;
+}
+
+.field input,
+.field select,
+.field textarea{
+    width:100%;
+    padding:14px 16px;
+    border:2px solid #dbeafe;
+    border-radius:12px;
+    background:#fff;
+    font-size:15px;
+    font-family:Poppins,sans-serif;
+    outline:none;
+    transition:.3s;
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 12px rgba(37,99,235,.25);
+}
+
+/* Company Address */
+
+.full-width{
+    flex:0 0 100%;
+}
+
+.full-width textarea{
+    width:100%;
+    height:90px;
+    min-height:90px;
+    max-height:140px;
+    resize:vertical;
+}
+
+/* Save Button */
+
+.save-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:14px 35px;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .row{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .field{
+        min-width:100%;
+    }
+
+    .save-btn{
+        width:100%;
+    }
+
+}
